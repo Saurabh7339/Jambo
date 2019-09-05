@@ -9,6 +9,7 @@ import android.os.Handler;
 public class MainActivity extends AppCompatActivity {
 
     private static int splash_time=4000;
+    String Suresh;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-              //  Intent LoginIntent= new Intent(MainActivity.this,LoginActivity.class);
-                //startActivity(LoginIntent);
+                Intent LoginIntent= new Intent(MainActivity.this,LoginActivity.class);
+                startActivity(LoginIntent);
                 finish();
             }
         },splash_time);
