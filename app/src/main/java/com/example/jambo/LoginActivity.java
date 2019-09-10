@@ -9,6 +9,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -82,9 +83,9 @@ public class LoginActivity extends AppCompatActivity {
     }
     public void gotoSignup(View view)
     {
+        Log.i("thala","viswasam");
         Intent SignupIntent= new Intent(LoginActivity.this,SignupActivity.class);
         startActivity(SignupIntent);
         finish();
     }
-
 }
