@@ -9,6 +9,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -30,9 +31,8 @@ public class SignupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.i("thala","vedalam");
         setContentView(R.layout.activity_signup);
-
-        firebaseAuth = FirebaseAuth.getInstance();
         progressDialog =new ProgressDialog(this);
         editTextconfirmpassword =(EditText)findViewById(R.id.confirmpassword);
         editTextpassword =(EditText)findViewById(R.id.password);
