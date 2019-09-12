@@ -5,18 +5,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".SignupActivity">
+    tools:context=".SignupActivity"
+    android:background="#322F2F">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="140dp"
         android:layout_marginBottom="30dp"
+        android:fontFamily="monospace"
         android:text="Sign Up"
-        android:textColor="#FF9800"
-        android:textSize="50sp"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -86,14 +88,19 @@
 
     <Button
         android:id="@+id/signup"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="80dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="SIGN UP"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/custom"
         android:onClick="signup"
-        android:textSize="20sp" />
+        android:text="SIGN UP"
+
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/haveaccount"
@@ -105,6 +112,8 @@
         android:onClick="gotoLogin"
         android:text="Already Have Account?"
         android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:alpha="0.8"
         android:textStyle="italic" />
 
 </LinearLayout>
