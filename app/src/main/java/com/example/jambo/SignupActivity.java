@@ -105,6 +105,7 @@ public class SignupActivity extends AppCompatActivity {
 
         //Firebase to done here
 
+
     }
     public void gotoLogin(View view)
     {
@@ -112,4 +113,5 @@ public class SignupActivity extends AppCompatActivity {
         startActivity(LoginIntent);
         finish();
     }
+
 }
